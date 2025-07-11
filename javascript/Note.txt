@@ -1,0 +1,5 @@
+1. Prefer not to use variable.
+    Because of issue in Block scope and functional scope
+
+
+    ** stack is same as shallow copy and Heap is same as Deep copy**

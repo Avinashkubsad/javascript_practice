@@ -1,0 +1,43 @@
+const name = "Avinash"
+const value = "58"
+
+
+// console.log("name",name);
+
+// console.log(`the name is ${name} and its value is ${value}`);
+
+
+
+const gameName = new String('Football')
+
+// console.log(gameName);
+// console.log(gameName[0]);
+
+// console.log(gameName.length);    //length
+// console.log(gameName.toLocaleUpperCase()); // convert to toLocaleUpperCase
+// console.log(gameName.charAt(2));            //to find what is at index 2
+// console.log(gameName.indexOf('t'))          // to find out which place is the char
+
+
+
+const newstring = gameName.substring(0,4);
+console.log(newstring);
+
+const anothernewstring = gameName.slice(-5,6)   // only in slice we can use negative values
+
+console.log(anothernewstring)
+
+
+
+const newName = '       avinash'
+
+console.log(newName)
+console.log(newName.trim());    //trim is used to remove spaces from beginning and end 
+
+
+const url = "https://avinash.com/avinash%20kubsad"
+
+console.log(url.replace('%20','-'));   //replace is used %20 is used by default then itmakes correct sentence or valid name
+
+
+console.log(gameName.split("0,-",))
