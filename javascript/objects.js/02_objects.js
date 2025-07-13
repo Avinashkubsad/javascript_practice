@@ -21,8 +21,8 @@ const anotheruser = {
     }
 }
 
-console.log(anotheruser.name?.fullname.firstname)    //?? this is called optional chaining   it is used incase  whther does it exists or not
-console.log(anotheruser.name.fullname.firstname)
+// console.log(anotheruser.name?.fullname.firstname)    //?? this is called optional chaining   it is used incase  whther does it exists or not
+// console.log(anotheruser.name.fullname.firstname)
 
 
 
@@ -35,19 +35,33 @@ const obj2 = {3:"c", 4:"d"}
 //const obj7 = Object.assign({},obj1,obj2);   //good practice
 
 const obj7 = {...obj1,...obj2}
-console.log(obj7)
+//console.log(obj7)
 
 
-console.log(Bumblee2)
-console.log(Object.keys(Bumblee2))   //keys to print keys
-console.log(Object.values(Bumblee2))   // values to print values
-console.log(Object.entries(Bumblee2));    //entries is used to print both keys &  values
+// console.log(Bumblee2)
+// console.log(Object.keys(Bumblee2))   //keys to print keys
+// console.log(Object.values(Bumblee2))   // values to print values
+// console.log(Object.entries(Bumblee2));    //entries is used to print both keys &  values
 
 
 
-console.log(Object.hasOwnProperty('isLoggedIn'))     // to check whether property is there or not
+//console.log(Object.hasOwnProperty('isLoggedIn'))     // to check whether property is there or not
 
 
 
 //destructuring in objects
 
+
+const course = {
+    course : "Trading",
+    courseinstructor:"Avinash",
+    amount : "999"
+}
+
+
+console.log(course)
+
+
+const {courseinstructor: Instructor} = course
+
+console.log(Instructor)
