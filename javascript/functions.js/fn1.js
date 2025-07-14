@@ -10,11 +10,11 @@ greet() //function invoke
 
 // parameters and Arguments
 
-function add(a,b){
+function add(a,b){                 // if we pass here then they are called parameters 
     console.log(a+b);
 }
 
-add(2,5);
+add(2,5);   // if we consider then it is called as arguments
 
 add(4,8)
 
