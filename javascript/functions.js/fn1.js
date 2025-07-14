@@ -29,3 +29,15 @@ function multiply(c,d){
 multiply(2,6);
 
 multiply(7,9);
+
+
+
+
+function loginusermessage (username){                                        // create  function  to print username
+        
+    return `${username} just loggedin successfully`         
+
+}
+
+
+console.log(loginusermessage("Avinash"));
