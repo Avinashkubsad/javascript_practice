@@ -18,7 +18,7 @@ function first(){
   const name ="Avinash"
 
   function two (){
-    const email = "avi@gmail.com"
+    const email = "avi@gmail.com@123"
     console.log(name)
   }
  // console.log(email);
