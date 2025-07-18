@@ -22,6 +22,8 @@ function first(){
     console.log(name)
   }
  // console.log(email);
+ console.log("learn bro u should grow");
+ 
   two()
 
 }
