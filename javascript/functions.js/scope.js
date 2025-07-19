@@ -20,6 +20,7 @@ function first(){
   function two (){
     const email = "avi@gmail.com@123"
     console.log(name)
+    console.log(name)
   }
  // console.log(email);
  console.log("learn bro u should grow");
