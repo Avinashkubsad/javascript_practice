@@ -1,1 +1,5 @@
 //write a program to reverse of a string 
+
+const arr1= [5,6,7];
+
+console.log(arr1.reverse());
