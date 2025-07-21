@@ -1,5 +1,6 @@
 //write a program to reverse of a string 
-
+//1.  using a inbuilt function 
 const arr1= [5,6,7];
 
 console.log(arr1.reverse());
+
