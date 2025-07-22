@@ -4,3 +4,9 @@ const arr1= [5,6,7];
 
 console.log(arr1.reverse());
 
+
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+console.log(reverseString("avinash")); // "hsaniva"
