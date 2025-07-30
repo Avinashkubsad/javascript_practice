@@ -12,5 +12,5 @@ function reverseString(str) {
 console.log(reverseString("avinash")); // "hsaniva"
 
 console.log("hello")
-console.log("hi")
+
 
