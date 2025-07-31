@@ -6,7 +6,7 @@ console.log(arr1.reverse());
 
 
 function reverseString(str) {
-    return str.split('').reverse().join('');
+    return str.split('').reverse().join('');   // converts the string into array of char ,reverse the array, reverses the array back into string.
 }
 
 console.log(reverseString("avinash")); // "hsaniva"
