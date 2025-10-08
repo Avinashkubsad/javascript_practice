@@ -1,0 +1,212 @@
+==> why reactnative better than native code
+//✅ 1. Faster Development (Single Codebase)
+//====>One codebase works for both iOS and Android.
+//====>Saves 50%+ development time compared to writing separate Swift/Kotlin apps.
+//====>Hot Reloading speeds up UI testing without recompiling.
+//✅ 2. Cross-Platform Support
+//====>Works on iOS, Android, Windows, and even macOS (via third-party tools).
+//====>Great for startups & businesses saving time & cost.
+//✅ 3. JavaScript & React Ecosystem
+//====>Uses JavaScript, which is easier to learn than Swift/Kotlin.
+//====>Huge community, pre-built components, UI libraries, and plugins.
+//✅ 4. Native-Like Performance
+//====>Uses native components (via React Native bridge).
+//====>Performance is good enough for most applications.
+//====>Works well for UI-heavy apps, though games and high-performance apps may prefer native.
+
+choose between native and react native?
+// Go Native if you prioritize performance, security, complex UI, and deep OS integrations.
+// Go React Native if you want a fast, cross-platform, and cost-effective solution.
+
+==> what are the main react native components or native components?
+View, Text, scrollview, Image, Flatlist, TouchableOpacity, TextInput, Button
+
+==>diff bw react and react native
+Feature     	React	                            React Native
+                library built on JS                 Framework built on react
+Purpose     	Build web applications	            Build mobile applications (iOS & Android)
+Platform	    Runs in browsers	                Runs on mobile (iOS & Android)
+Rendering	    Uses HTML, CSS, JavaScript	        Uses native components (View, Text, Image)
+Styling	        Uses CSS	                        Uses StyleSheet API (like CSS-in-JS)
+DOM	            Uses Virtual DOM	                Uses Native APIs & Components
+Navigation	    Uses React Router	                Uses React Navigation
+Libraries	    Uses npm/yarn libraries	            Uses libraries like React Native Reanimated, Gesture Handler
+Compilation	    Runs in browser without             Needs compilation via Metro bundler
+                extra compilation	
+
+==> if animation is not working properly how to optimise?
+//1️⃣ Use useNativeDriver: true (For Better Performance)
+//5️⃣ Optimize Animations with react-native-reanimated
+//3️⃣ Avoid Unnecessary Re-Renders (useMemo, useCallback)
+//8️⃣ Optimize SVG Animations Using react-native-svg
+
+==> how to make fonts responsive, (like reducing size in smaller screen)?
+//1️⃣ Use react-native-responsive-fontsize (Best Approach)
+//3️⃣ Use Dimensions API for Manual Scaling (Custom Approach)
+//4️⃣ Use PixelRatio for More Precision
+
+==> how to store sensitive data?
+//1️⃣ Use react-native-keychain (Best for Secure Storage)
+//2️⃣ Use react-native-encrypted-storage (Best for Encrypted Async Storage)
+//3️⃣ Use AsyncStorage with Encryption (❗ Not Secure by Default)
+//4️⃣ Use .env for API Keys (Never Hardcode in Code!)
+
+use MMKV instead of asyncstorage?
+
+
+==> optimisation techniques?
+//2️⃣ Avoid Unnecessary Re-Renders with useMemo & useCallback
+//3️⃣ Optimize FlatList and ScrollView for Large Lists
+//4️⃣ Optimize Image Loading with react-native-fast-image
+//5️⃣ Optimize Animations with react-native-reanimated
+//6️⃣ Reduce Bundle Size Using metro-config
+//7️⃣ Optimize Redux with Redux Toolkit & useSelector
+//
+
+==> how to handle large amount of data?
+//1️⃣ Use FlatList Instead of ScrollView (For Large Lists)
+//ScrollView renders everything at once → 🔥 high memory usage.
+//FlatList renders only visible items → ⚡ better performance.
+//2️⃣ Use Pagination for Large API Data
+//3️⃣ Use SQLite for Large Local Data (Instead of AsyncStorage)
+//4️⃣ Optimize Re-Renders with useMemo & useCallback
+
+
+
+==> javascript convert to native code?
+//==>React Native doesn’t directly compile JavaScript to native code.
+// Instead, it runs JavaScript using a JavaScript engine and communicates with native modules through a bridge.
+//The bridge sends JSON-serialized data between JS and Native modules asynchronously.
+//Native modules then execute the request and return results to JavaScript.
+//Native modules provide access to APIs like Bluetooth, Camera, Geolocation.
+
+==> hooks?
+
+==> lifecycle methods?
+
+
+==> responsive design?
+// use flex box
+// 1. Using the Dimensions API:
+// 2. Using the useWindowDimensions Hook:
+// 4. Platform-Specific Styling:
+
+==> Best Practices:
+// Regularly Sync with Master: Frequently pull changes from the master branch to minimize conflicts and stay updated with the latest codebase.
+// Communicate with Team Members: Ensure that all team members are aware of the current workflow and any recent changes to prevent overlapping work and conflicts.
+// Backup Before Major Operations: Before performing significant Git operations, consider creating a backup branch to safeguard your work.
+
+==> what is action cables?
+
+what is conditional rendering?
+//show a submit button after entering all the form inputs
+
+what are websockets and web packs?
+
+tool to find the hierarchy of rerendering components in react native?
+//react-devtools
+
+what is profile link? how to achieve it?
+// using deep linking
+
+what is flipper?
+// Flipper is a debugging tool for React Native apps. 
+// It helps developers inspect, debug, and monitor various aspects of their app, such as the UI, network requests, logs, and databases.
+
+what blocks ui thread?
+// 1️⃣ Heavy Computation in JavaScript
+2️⃣ Synchronous SetState in Loops
+3️⃣ Long Network Requests
+
+how to solve?
+// using settimeout or settimoutimmediate
+request animation frame 
+using native modules
+
+how to know a animation is causing performance issue in react native?
+// ✅ Use the React Native Performance Monitor
+// Shake your device (or press Cmd+D on iOS, Ctrl+M on Android).
+// Select "Performance Monitor" to see:
+// JS FPS (JavaScript thread frames per second)
+// UI FPS (UI thread frames per second)
+// Memory usage
+// 📉 If FPS drops below 60, an animation might be too heavy.
+
+// ✅ Use Flipper for Frame Rate Analysis
+
+// useNativeDriver: true moves animations to the UI thread, reducing JS thread load if it was running on js thread.
+// (b) Avoid Re-renders in Animated Components
+// use of react-devtools
+// use rn-reanimated
+
+how to select a better package for any new implimentation ?
+// evaluating various factors such as performance, maintenance, and community support
+// 1️⃣ Check Package Popularity & Downloads
+// 2️⃣ Check the Maintenance & Last Update
+// 3️⃣ Check Open Issues & Bugs
+4️⃣ Check Documentation & Community Support
+✔️ Look for:
+Well-organized API docs 📚
+Usage examples & tutorials 📝
+Stack Overflow or Discord support 👨‍💻
+
+🚨 Bad signs:
+Sparse or unclear docs ❌
+Missing TypeScript support ⚠️
+No community discussions 🏚️
+// 5️⃣ Check Performance & Bundle Size
+// 6️⃣ Compare Alternatives
+
+system designing?
+
+
+how firebase dynamic link works?
+// 1️⃣ How Firebase Dynamic Links Work?
+// User clicks a dynamic link (e.g., https://example.page.link/abcd).
+// If the app is installed, the link opens directly inside the app.
+// If the app is not installed, the user is redirected to the App Store (iOS) or Play Store (Android).
+// After installation, the app retrieves the deep link parameters to navigate to the correct screen.
+
+how deeplink works?
+// ✅ Deep links navigate users directly to specific screens
+// ✅ Custom URL Schemes work only if the app is installed
+// ✅ Universal/App Links work even if the app is not installed
+// ✅ Handle deep links in both running & closed states
+
+migrate react native version?
+// hour to weeks depends on small migration or large 
+
+does react native uses vertual dom?
+// No, React Native does not use the Virtual DOM (VDOM) like React does for the web. 
+// Instead, it uses a Bridge to communicate with native platform components.
+
+lifecycle methods?
+// special functions which allows to control the component behaviour dynamically
+
+what is gestures? what we use to implement the gesture in react and react native?
+// onclick, onmouseover, mousedown, mouseup,  in web
+// In React Native, touch gestures are managed using libraries like:
+// react-native-gesture-handler (Preferred for complex gestures)
+
+what is hot reloading and how it was different from soft reloading and live reloading?
+hot reloading==>
+// make hot= ture (in config.js file)
+// ✅ Keeps component state (most of the time)
+//  Faster (only updates changed components)
+	// Injects updated code without restarting
+    live or soft reloading==>
+    // Fully reloads app, losing state
+    // Reloads the entire app from scratch
+
+
+
+// 1. if your streeming audio or vedio for the whole Day, for smooth server connection what i can do to manage better server speed
+//2. hash maps
+//3. append some information to user list based on a flag, how i can reduce time complexity
+
+
+how jsx works in react native
+what is babel how it works in react native
+how redux-toolkit is better than redux?
+
+how to deploy app to appstore and play store?

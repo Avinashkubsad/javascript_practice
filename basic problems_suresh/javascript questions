@@ -1,0 +1,245 @@
+Is JavaScript a case sensitive language?
+yes
+	
+difference bw typescript and javascript?
+==>js is faster, type script is slower since first need to compile into JavaScript, then runs.
+
+Is JavaScript Strictly Typed or Loosely Typed Language?
+loosly types, since dont need to specify variable types
+	
+Is JavaScript interpreted or compiled?
+interpreted
+	
+What is the difference between Primitive and Non Primitive Data Type?
+number,             object,
+string,             array,
+boolean,            function
+undefined,
+null,
+symbol
+	
+What is the difference between let and var?
+
+what is pure component?
+A Pure Component in React is a class component that automatically optimizes rendering by preventing unnecessary re-renders. 
+It does this by implementing shallow comparison (shouldComponentUpdate) under the hood.
+
+, uncontrolled component?
+An Uncontrolled Component in React is a form input that manages its own state internally, rather than being controlled by React state (useState). 
+Instead of React handling the input value, the DOM itself manages the input’s state.
+
+web Apis?
+fetch, settimout, console, DOM apis(getelementbyid, etc)
+	
+What is ECMA, EcmaScript and ES6?
+// ✅ ECMA is the organization that maintains standards.
+// ✅ ECMAScript (ES) is the specification for JavaScript.
+// ✅ JavaScript implements ECMAScript + extra features (like DOM manipulation).
+// ✅ New ECMAScript features are released yearly (ES6, ES7, etc.).
+
+What is the difference between == and ===?
+	
+What is event Loop?
+code execution machanism in JS, responsible for code exicution
+callStack, callback que, microtask Que, execution context, global execution context, 
+
+what is mutation observer?
+monitors DOM continuously
+
+what is starvation?
+event loop continuously give chance execute microtask que, even if something is there in callback que.
+
+what are pure functions?
+A Pure Function is a function that always produces the same output for the same input and has no side effects.
+✅ Characteristics of Pure Functions:
+1️⃣ Deterministic → Given the same input, it always returns the same output.
+2️⃣ No Side Effects → It doesn’t modify external variables, data, or state.
+3️⃣ Doesn’t Depend on External State → It only depends on its input parameters.
+
+
+
+what are first class function or first class citizens?
+==>  Assign functions to variables
+✅ Pass functions as arguments
+✅ Return functions from other functions
+
+what is higher order function/
+function which takes a function as argument is called higher order function. 
+map, filter, reduce
+
+what is callback function?
+==> the function which passed as a argument to the higher order function.
+
+what is hoisting?
+moves declaration of the variable to the top of the scope.
+
+what is closure?
+==> function bundled with its lexical scope,
+==> uses ==> datahiding, encapsulation, currying, memozition
+
+what is callback hell?
+Callback Hell (also known as "Pyramid of Doom") occurs when multiple nested callbacks make the code hard to read, debug, and maintain.
+It happens in asynchronous JavaScript when each function depends on the result of the previous one, leading to deeply nested callbacks.
+promises, async/await
+
+what are arrow function, deconstruction, classes?
+
+what is debouncing and throttling?
+
+difference bw map, filter, reduce
+
+slice and splice
+
+what is merge box?
+
+what is access modifier?
+public, private
+
+what is single page application?
+A Single Page Application (SPA) is a web application that loads a single HTML page and dynamically updates the content without reloading the page.
+
+react native bridging and JSI(js interphase)
+
+memoization and useCallback
+
+reconciliation process: comparing with real dom and virtual
+
+optimisation techniques in react native
+
+Halt process: breack, return, try, catch
+
+push notification
+
+oops?
+
+lifecycle methods?
+special functions which allows to control the component behaviour dynamically
+
+higher order component?
+A Higher-Order Component (HOC) is a function that takes a React component as input and returns a new enhanced component. 
+It is a pattern used for code reuse, logic abstraction, and component composition.
+
+class and functional components
+
+web sockets and web packs
+
+redux
+
+rules of react hooks?
+===>Only call hooks at the top level: Don't call hooks inside loops, conditions, or nested functions. ...
+Only call hooks from React functions: Hooks can be called from React function components or custom hooks, but not from standard JavaScript functions or class components.
+
+how hook is different from normal function?
+===>Custom hooks are a way to reuse logic across multiple components. They are functions that use React hooks, such as useState, useEffect, or useContext, to provide a specific behavior or functionality.
+Custom hooks allow you to encapsulate and abstract complex logic into reusable units that can be easily consumed by multiple components. They follow a specific naming convention of starting with the word "use" to indicate that they are hooks.
+Regular functions, on the other hand, are more general-purpose functions that can perform any task or operation.
+They are not tied to React-specific concepts or hooks. Regular functions can be used for a wide range of purposes, such as data transformations, utility operations, calculations, or API requests. They are not bound by the rules or constraints of hooks and can be used in any JavaScript context.
+
+why hooks called at the top level?
+1️⃣ Ensures Consistent Hook Order
+React remembers Hook calls based on their order in the component. If a Hook is inside a condition or loop, its order can change between renders, 
+breaking React’s internal tracking.
+2️⃣ Prevents "Rendered Fewer Hooks Than Expected" Error
+If Hooks are inside conditions, some renders may skip calling a Hook, leading to errors like:
+3️⃣ Makes Debugging Easier
+If Hooks are scattered inside conditions or loops, debugging becomes harder because Hook calls may vary in different renders. 
+Keeping them at the top level makes tracking state and effects more predictable.
+
+gradle
+
+redux thunk
+
+flex box
+
+difference bw break and continue and return
+
+priventDefault and stoppropagation
+
+shallow copy and deep copy
+
+slices in redux-toolkit
+
+scrollView and flatlist
+
+debouncing and throttling
+
+what is pollyfill?
+Older browsers or JavaScript engines may not support modern features like Promises, Fetch API, or ES6 methods. 
+Polyfills allow developers to use newer JavaScript features while ensuring compatibility with older environments.
+
+js memozition
+
+
+use of return in useeffect?
+===> The return function is the cleanup function, or when the user leaves the page and the component will unmount. 
+
+default flexDirection in ReactNative ===> colomn
+
+
+what is garbage collector?
+==> is the process of automatically reclaiming memory that is no longer in use, preventing memory leaks.
+==> function example() {
+    let a = { name: "John" }; // Memory allocated for object { name: "John" }
+}
+
+example(); // Function runs, and 'a' is created
+// After execution, 'a' is no longer accessible → Garbage Collector removes it.
+
+
+settimout and setInterval?
+
+
+prototype inheritance?
+// Prototype Inheritance is a feature in JavaScript where objects can inherit properties and methods from other objects using the prototype chain.
+
+ES6 features?
+// let and const
+// arrow function
+// template literals (`${value}`)
+// destructuring
+// default parameters
+// rest and spread operators
+// classes
+// promises
+// for of
+// Set and Map
+
+
+What is a Promise in JavaScript?
+A Promise represents the eventual completion (or failure) of an asynchronous operation. It allows chaining of .then() and .catch() methods for handling success or failure.
+
+How does for...of differ from for...in?
+for...of is used to iterate over iterable objects (arrays, strings, etc.), whereas for...in iterates over the keys of an object (or indices of an array).
+
+What is a Map in JavaScript, and how is it different from an object?
+A Map is an ordered collection of key-value pairs where keys can be of any type, while object keys are always strings or symbols. Maps also remember the insertion order.
+
+
+App.tsx
+
+import React from 'react';
+import LoginScreen from './screens/LoginScreen';
+import SearchScreen from './screens/SearchScreen';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { promises } from 'dns';
+
+const Stack = createStackNavigator();
+
+const App: React.FC = () => {
+
+  return (
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen name="Search" component={SearchScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
+  );
+};
+
+export default App

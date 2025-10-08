@@ -1,0 +1,19 @@
+npx @react-native-community/cli init PlanetApp
+npm install --save-dev typescript @types/react @types/react-native
+
+npm install redux react-redux npm  install --save-dev @types/react-redux
+yarn add redux-thunk
+yarn add -D @types/redux-thunk
+
+npm install @react-navigation/native-stack
+# npm install @react-navigation/stack
+npm install react-native-screens react-native-safe-area-context 
+react-native-gesture-handler react-native-reanimated 
+@react-native/dev-menu
+npm install @react-navigation/native
+npm install react-native-screens react-native-safe-area-context 
+react-native-gesture-handler react-native-reanimated 
+react-native-vector-icons @react-native-masked-view/masked-view
+npm install --save-dev @types/react-native @types/react @types/react-native-vector-icons
+./gradlew clean
+./gradlew assembleRelease

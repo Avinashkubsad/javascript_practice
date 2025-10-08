@@ -1,0 +1,920 @@
+js class notes:
+
+https://docs.google.com/document/d/1Wq3HDYC0aINXBwRKJGT6RMtQf7B4qNLcPtnz42_LFSk/edit
+
+---
+
+USERAGENT:- BROWSER i.e which connects the user and the server
+
+undefined => is a special value data type is undefined
+
+null => is a special value data type is null (object )you can assign this to a variable as a value
+
+diffrence of null and undeefined is
+
+at compile time undefined
+at run time null
+
+---
+
+diffrence bw foreach and map;- The main difference between map
+and forEach is that the map method returns a new array by applying
+the callback function on each element of an array, while the forEach
+method doesn't return anything. You can use the forEach method to mutate
+the source array, but this isn't really the way it's meant to be used
+
+---
+
+## stacking index zindex;-
+
+web packs;- What is webpack and why use it?
+Webpack is a tool that lets you compile JavaScript modules,
+
+also known as module bundler. Given a large number of files,
+it generates a single file (or a few files) that run your app. It can perform many operations: helps you bundle your resources.
+watches for changes and re-runs the tasks
+
+---
+
+code splitting;-Code splitting is the splitting of code into various bundles or components which can then be loaded on demand or in parallel. As an application grows in complexity or is maintained, CSS and JavaScripts files or bundles grow in byte size, especially as the number and size of included third-party libraries increases.
+
+or
+
+Why would you use code splitting?
+Code splitting allows you to strategically omit certain dependencies from bundles, then insert them only where they are needed. This means they are also not loaded until they are needed — loading JavaScript only when it is needed speeds up the page's load time.
+
+---
+
+babel;- is a transpilar and babel is a transpiler that converts your modern JavaScript to run in older browsers. It can also perform other jobs such as converting JSX syntax, but it is not the only tool for that. As browsers evolve, new APIs and ECMAScript features are added.
+
+---
+
+## lazy loading;-
+
+event bubling and capturing;-
+
+---
+
+diffrence bw .css amd .model.css;- css file can be a CSS module. The difference is that the style definitions in that file are scoped to specific components instead of globally. The composes property is used in CSS module files to combine local style definitions.
+
+or
+
+## --> CSS module is a CSS file in which all class names and animation names are scoped locally by default. In short, all the CSS declared in the file are local to the file in which this CSS file is imported. We will use CSS modules in the context of React but they are not limited to just React.
+
+diff bw content-box and border-box;- content-box: The width & height of the element only include the content. In other words, the border, padding and margin aren’t part of the width or height. This is the default value.
+border-box: The padding and border are included in the width and height.
+
+---
+
+call => is a pre defined function in js call will change refrence of this keyword in function
+
+obj = {num:1}
+obj = {num : 2}
+function fn(){
+var std={this.num}
+
+}
+fun.call(obj1)
+fun.call(obj2)
+here call reprecent this keyword;
+whatever you pass thogh call it goes to refrecent this keyword in fun
+
+apply => it is also same as call but diffrence is apply takes only two arguments to pass but call takes as many
+as we want pass the argument, and apply takes one value and one array as arguments but call wont support array as
+argument
+
+fun.call(a,f,g,f)
+fun.apply(a,[d])
+
+bind=>const person = {
+firstName:"John",
+lastName: "Doe",
+fullName: function() {
+return this.firstName + " " + this.lastName;
+}
+}
+
+const member = {
+firstName:"Hege",
+lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
+
+---
+
+map normal itiration
+
+filter => takes a condition and check whole array against that condition
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+return age >= 18;
+}
+
+jsfiddel.net
+
+closure := a function always have access to
+the VE of execution context even it it is not a part of call stack
+
+EADME.md
+06-Dec
+
+Cover Various Parts of HTML/CSS.
+Project: -> Admission Form!
+
+What does the name attribute do?
+used to identify/refer to the data. (Helpful for backend)
+Used to refer for the labels.
+Used to group multiple inputs together (ONLY For RADIO/CHECKBOX).
+Tasks -> - Required Field - Placeholders - Different types of inputs,
+such as Name, Email, Phone Number. - Pattern for Phone Number - Select Box.
+
+- Radio / Checkbox.
+
+callback hell= forcing async function to work synchroanaslly
+like in nesting of set time out
+
+Dec-07
+
+Objects and Arrays.
+
+Event Listener
+
+Add/Edit/Delete a new Element (DOM Manipulation)
+
+Why Style is written in head and scripts are written at last. ->
+Improvement in UI, the style is already available when the HTML is loaded.
+-> Tradeoff of performance,
+we are not loading unnecessary functionality before.
+
+Types of list: -> ul -> ol -> dl -> dl -> dt
+
+What is an eventListener? -> Callback function which is executed when an event happens.
+
+i++ -> i = i + 1; i-- -> i = i - 1;
+
+getElementById getElementsByTagName getElementsByName querySelector querySelectorAll
+
+String templating. / Template Literals. -> Variables inside a string.
+
+-> Simple Task List. -> Input Field -> Add button. -> List of all the tasks.
+-> Edit/Delete a task.
+
+-> Mark the task as done.
+
+split -> Splits the string into an array,
+Further Reading:
+
+https://www.hcaptcha.com/
+https://www.google.com/recaptcha/about/
+
+Dec -09
+
+this keyword -> Context
+Modify -> call/apply/bind.
+functions -> Scope + Hoisting Closure.
+
+sum(a)(b)(c)
+
+//Assignment //Write a function to take the input from the 3 input HTML fields.
+//DO NOT USE PROMPT! //Also have a button, clicking on which will display the result.
+//Underlying concept should be like this. 👇🏻 // mul(2)(3)(5);
+
+© 2022 GitHub, Inc.
+
+Dec-10
+
+querySelector vs querySelectorAll vs getElementById.
+-> Asynchronous JS --> setTimeout --> fetch API call
+
+What is asynchronous. -> Doesn't care about the output. -> Doesn't wait for previous
+function execution to finish.
+
+What is synchronous? -> Execute in a sequence. -> Execute line by line.
+
+-> JS is a single threaded language. -> It can only execute 1 process at a given time.
+
+fetch -> Fetch the data from somewhere. -> It returns a promise and gets the data from
+the network/server.
+
+JSON -> JavaScript Object Notation -> A way of representing Object Data
+
+Further reading After hours -> async await. XML (Alternative to JSON, for old legacy
+companies)
+
+Assignment -> Display the data.(Dynamically fill the Table) -> Make it look good.
+
+//https://reqres.in/api/user //If it is done, DO NOT submit the same code,
+make it look good.
+
+fetch concept. What is fetch?
+Fetch the data from URL and return a promise object.
+After that, use .then and add what we want to do.
+Get the data from the server.
+Is an async function.
+-> fetch will fetch the resource based on the URL and retrun the promise which will
+return the data.
+
+URL -> Uniform Resource Locator API -> Application Programming Interface
+-> A gateway with the use of which two different programs can communicate with each other.
+
+Wireframe -> A drawing/design/layout of how your website should look like.
+(Similar to blueprint of buildings).
+
+Create a blog (article publishing) website. (Make this responsive) ->
+Task (From start to end), rest on this will be assignment.
+Interview Question //for(var i=1; i<=5; i++){ setTimeout(function(){ console.log(i); },1000) }
+
+Assignment: -> Give your own CSS to the blog webpage, make it look very very beautiful
+
+Further reading: https://github.com/v8/v8
+
+Dec-13
+
+Async Programming setInterval
+
+Create a timer app.
+
+Questions regarding Object and functions.
+
+CSS -> CSSOM, CSS Specificity.
+
+Scope (Scope Chaining, Lexical Scope). 3.1 let vs var in a loop.
+
+Developer Console.
+
+Q1. What is setTimeout? -> Adds a delay to the callback function. ->
+The callback will be called on or after the delay. -> The callback will be called
+when the call stack is finished.
+
+N1. Both setInterval and settimeout returns the ID. (Identifier).
+
+Q.2 What is difference between call and apply? -> Both are similar,
+just that apply takes an array whereas call takes comma separated arguments.
+-> apply is more dynamic because we can the array dynamically.
+
+Q.3 What is a DOM? -> It's a global object. (Has a tree like structure)
+-> Used to change style, content, children, basically, Manipulation. ->
+(D)ocument (O)bject (M)odel ->
+Parsing of HTML string into an object.
+
+//BOM -> (B)rowser (O)bject (M)odel -> Everything that happens in the browser actually
+happens in the BOM. BOM is parent of DOM. window.document = document;
+
+Q.4 CSSOM -> CSS (O)bject (M)odel -> Object of all the CSS properties and selectors.
+-> This is also a tree like structure.
+
+Render Tree -> DOM + CSSOM;
+
+Assignment - Continue on the Timer app and give your own creativity.
+
+Further reading:
+
+https://www.youtube.com/watch?v=qZ1EFnFOGvE
+https://www.youtube.com/watch?v=iuGPFbLlKYQ
+
+//Shallow Copy //A copy where two different pointers are pointing to the same memory
+location.
+
+let obj = { 'key1': 'Value 1', 'key2': "Value 2", };
+
+let new_obj = obj;
+
+new_obj.key3 = "Value 3";
+
+console.log(new_obj); console.log(obj);
+
+//Deep Copy //Two different memory locations are used.
+
+let dobj = { 'key1': "Value 1", 'key2': "Value 2", }
+
+let new_dobj = { ...dobj }; let new_dobj1 = JSON.parse(JSON.stringify(dobj));
+
+new_dobj.key3 = "Value 3";
+
+console.log(dobj); console.log(new_dobj);
+
+-> https://jsonplaceholder.typicode.com/todos/1
+-> https://jsonplaceholder.typicode.com/posts -> let new_arr = [ ...old_arr ];
+
+ME.md
+CSSOM -> CSS (O)bject (M)odel -> Tree which contains Styles.
+-> The nodes will be the elements of the document. -> It will have style properties
+instead of HTML attributes. -> Style -> color, font-size,
+width, height, etc.
+DOM -> This will be the same tree, each html element will be a single node here. ->
+It will contain the HTML attributes as well as the HTML content. -> Example -> src,
+type, innerText, innerHTML,
+eventListener, etc.
+
+Render Tree -> DOM + CSSOM;
+What is rendering? -> Displaying the content on the screen (viewport). ->
+Showing the content (Document). -> Showing the Render Tree -> Document + Style.
+
+Scope (Scope Chaining, Lexical Scope). 3.1 let vs var in a loop. 4. Developer Console.
+
+CSSOM vs DOM vs Render Tree
+-> CSSOM contains style properties. (Like margin, padding, border, color, etc. etc).
+-> DOM contains HTML Attributes. (Like onClick, src, class, value, type, id, Listeners,
+target, name). ->
+DOM also contains the content (Like, innerText, innerHTML, children, grandchildren,
+etc. etc.).
+
+-> Render Tree -> Combination of CSSOM + DOM. -> This Tree contains the HTML attributes
+as well as the style properties.
+
+Q. What is a Scope? -> Block where the variable can be accessed. ->
+Availability/Accessability. -> The block of code upto which the extent of my
+variable/function/constant (whatever reference) can be accessed.
+
+Scope Chaining -> Scope + Chaining -> The functionality of checking the current scope
+and if the reference is not available, then check the parent scope and still if unavailable,
+then check it's parent and then it's parent and finally Reference Error.
+
+In depth for let & var & const for scope and hoisting.
+Lexical Scope -> Lexical + Scope. relating to the scope. -> Relative Scope. ->
+Scope within which we can access something (variable, function, const). ->
+This is the reference scope where all the required variables/functions/constants
+vagera vagera are available.
+
+3.1 let vs var in a loop. 4. Developer Console.
+
+CSS Specificity.
+-> In case of same property being defined at multiple places for same element,
+which value will be applied. Specificity helps to decide that. ->
+Priority of which style is going to be applied.
+
+DEFAULT:
+
+Inline has the highest priority.
+
+For the same selector level, whatever is written after is considered as higher priority.
+
+For different selector levels: 3.1 Universal selector has the lower priority
+(lowest specificity) 3.2 Type (Tag) Selector has comparatively higher priority.
+(Higher specificity). 3.3 Class selector has comparatively higher priority.
+(Higher Specificity). 3.4 ID selector has highest priority. (Highest specificity).
+
+(!important --> key word has more importance)
+
+Universal < Type < Class < ID < !important
+
+Exception -> "!important" -> Override the default rule and make this property
+highest priority. If in a situation we have multiple properties having important
+applied.
+Then we will fallback to the speicificity rule to find which is more important
+"among us".
+
+Some DSA questions to be solved using JS.
+Assignment -> Fix bug on Question 2.
+
+Reverse a string -> abcd => dcba -> Hello World => dlroW olleH
+
+Reverse all the words in the string -> Hello World => olleH dlroW -> Hey, there =>
+
+//Swapping two numbers without a third variable.
+
+let a = 10; let b = 20;
+
+//Do something (DO NOT USE ANY OTHER VARIABLE)
+
+console.log(a); => 20; console.log(b); => 10;
+
+//Check whether string is palindrome or not. => 131, MOM, Naman, CTC, kadak, nitin,
+lol, malayalam, madam, radar.
+
+-> The string should be same whether we read from right to left or from left to right.
+
+Assignment:
+
+Question 7 -> Check whether the given number is an armstrong number or not.
+-> The num = sum of cubes of it's digits: 371 => 333 + 777 + 111 = 27 + 343 + 1 = 371 153 => 111 + 555 + 333 =
+1 + 125 + 27 = 153 407
+
+Question 8 -> Check whether the two strings are anagram or each other or not.
+Anagrams are simply string where the characters are rearranged.
+
+-> heart -> earth -> abcd -> bcad | dbac | cadb | adbc -> listen -> silent ->
+tea -> ate -> aabb -> abab | baba | bbaa | abba | baab
+
+Further Reading:
+
+XOR -> Binary Maths
+
+ADME.md
+Dec-18 Q-9 -> Write a program to print inverted triangle/pyramid.
+
+n -> 5 5/2 = 2.5 => Math.ceil(2.5) => 3
+
+Math.floor 1.24 => 1 1.999999 -> 1 2.5 => 2
+
+Math.ceil 1.0000001 => 2 1.45 => 2
+
+n -> 9 9/2 = 4.5 => Math.ceil(4.5) = 5;
+
+- Assignment: Question - 10 -> Write a program to print the pattern.
+  (Hourglass pattern -> Sands of Time)
+
+n - 5
+
+n = 9
+
+- Q-11 -> Diamond Pattern n = 5
+
+n = 7
+
+Interview Questions:
+
+Difference between Javascript and Java? -> JS is scripting language and
+Java is programming language.
+-> JS is dynamically/loosely typed and
+Java is statically/strongly typed. ->
+JS is interpreted and Java is compiled. ->
+Java is multi-threaded and
+JS is single threaded.=>computing the execution of an entire task from beginning to end without interruption.
+-> JS cross platform (Browser, Server, Mobile App, Desktop App).
+-> Java is strongly OOP,
+JavaScript follows Multi-Paradigm approach.
+Programming Paradigms -> The way in which we structure and write the program.
+-> OOP -> Object Oriented Programming. -> Functional Programming.
+-> Procedural programming. ->
+Structured Programming. -> Encapsulated Programming. -> Modular Programming.
+
+What are different Datatypes in JS -> Number (-9007199254740991 to 9007199254740991);
+-> BigInt (1.7976931348623157e+308) -> boolean -> undefined -> String -> null -> Object
+
+What is NaN? -> NaN means that the variable is Not a Number. -> JS has given the
+data type of number but the value could not be decided.
+isNAN() -->check for var is a number or not
+-> parseInt();
+-> It's a function which takes a
+string and returns it's number equivalent. -> The datatype of NaN is a number;
+
+Difference between == and === and =. -> == Checks for data values.
+(It does something called as Type Juggling). -> === Checks for the value as well as the
+Datatype. -> = is assignment
+operator. It will assign the value.
+
+What will be the output of; -> post increment and pre increment.
+
+i++; <- Post increment / decrement ++i; <- Pre increment / decrement
+
+let i = 10; console.log(i++); -> 10;
+
+let i = 14; let j = i++; //-> let j = i; i = i + 1; console.log(j); //console.log(i);
+-> 14
+
+let i = 14; let j = ++i; console.log(j); -> 15
+
+let i = 14; i++; console.log(i); -> 15
+
+let i = 14; ++i; console.log(i); -> 15
+
+Type coercion -> JS will automatically conver the datatypes to operate.
+-> What will be the output of console.log(1+2+3+4+5+"6");
+
+//Under the hood -> console.log(3+3+4+5+"6"); -> console.log(6+4+5+"6"); ->
+console.log(10+5+"6"); -> console.log(15+"6"); -> console.log("156") -> "156";
+
+-> 12345 ❌ -> 66 ❌ -> 156 ✔ -> 1056 ❌
+
+console.log(1+2+3+4+5+"6"+7+8+9);
+
+//Under the hood -> console.log("156" + 7 + 8 + 9); -> console.log("1567" + 8 + 9);
+-> console.log("15678" + 9); -> console.log("156789"); -> "156789" ->156789
+
+/ BODMAS -> Maths / BEDMAS Rule -> Programming -> Brackets -> Exponents -> Division ->
+Multiplication -> Addition -> Subtraction
+
+Further Reading:
+
+Callback hell. Q. Coding -> Largest Substring in a string -> Largest subset from an array
+.
+-> have the function largest four (arr) take the array of integers stored in arr and find
+the four largest elements and return their sum.for example: arr is [4,5,-2,3,1,2,6,6]
+then the four largest elements in this is 6,6,4,5 total sum is 21?
+
+Interview Questions:
+
+Difference between var vs let vs const.
+What is a closure.
+What is a callback.
+What is fetch.
+What is chaining. ( .then chaining);
+What is promises.
+What is an API -> with example.
+What is asynchronous programming in general (specific to JS)
+What is a scope? What is scope chaining.
+Call apply bind
+Hoisiting
+What is this keyword.
+anagram / palindrome / fibonacci.
+Coding -> Pattern.
+Coding -> Remove a duplicate element
+Coding -> Reverse a string with words.
+Give Features of JavaScript? Is JS case sensitive?
+How to make an Object immutable? by using object.freez(obj) the object passed to the freez function will freez
+How to split a string into an array? How to join an array into a string.
+How to slice/splice an array.
+Coding -> Sort an array.
+How does fetch work.
+Coding -> Use fetch to get data from the internet and display in the list.
+Find duplicate values from a string.
+Dekete an element from an object as well as from an array.
+What is NaN and what is it's data type?
+setTimeout / setInterval / clearTimeout / clearInterval
+DOM / BOM
+ECMA / ES
+JSON
+HTML use custom valudation using Regular Expressions
+What is a Regular Expression
+How to reverse an array.
+
+Dec-25
+
+HTML / CSS Revision. -> DOM / BOM / CSSOM
+q. What is DOM? -> Document Object Model -> It is a global object used to manipulate
+the webpage. -> It is a tree like structure with which we can change or edit any node
+(Element).
+-> It contains of Nodes.
+
+-> Attributes are additional properties which are part of your HTML element.
+
+Tag vs Element -> Tags are anything between <>. -> Elements contain stuff between the
+tags. -> Tags are used to hold the HTML element. -> Tag is singular. Element can have
+children also.
+
+Node vs Element. -> Node we say when we are talking about JS point of view of DOM tree.
+-> Element we saw when we are talking from HTML point of view.
+
+-> What is BOM? -> Browser Object Model -> It is window object. -> Manipulating the
+browser will be done via BOM. -> It is parent of DOM.
+
+window.document == document -> true;
+
+-> What is CSSOM? -> CSS Object Model -> The tree of document containing the style.
+-> All the style properties are stored here.
+
+-> What is a Render Tree? -> Combination of CSSOM and DOM.
+
+-> What is Rendering? -> Showing of data on the Viewport. -> Displaying the document on
+the Viewport. -> Rendering includes style. -> Displaying the Render Tree (parsed) on the
+viewport.
+
+-> Whenever we load a page. Firstly the HTML document is loaded. After that while
+parsing, the engine will see the CSS file which will create a CSSOM then the JS file
+is seen and added to
+the DOM. Finally they are combined into a Render Tree which is then rendered on the
+viewport.
+
+-> Why do we write CSS before JS? -> To show the style first as priority. The UI is more
+important. For better looks -> Looks are more important than functionality.
+
+Marquee -> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee
+-> HTML5 -> 13 years ago. (22 Jan 2008) -> HTML 5.3 -> Introduction of HTML5 tags.
+
+-> Adding favicon. (The image shown next to the title).
+
+-> Meta --> It gives additional information about our webpage. -> It is not mandatory,
+but good to have. -> It is used for SEO. -> Search Engine Omptimzation.
+-> Priority of the search result. -> It gives a small preview when we share the webpage
+on any social media or whatever. -> https://developers.facebook.com/docs/sharing/
+webmasters/
+
+--> HTML Form.
+
+--> Fieldset -> Used to combine (group) multiple inputs together --> Legend ->
+Title of the fieldset. --> Label -> Used to give label / additional text to the input.
+
+-> ARIA -> Accessible Rich Internet Applications. -> https://developer.mozilla.org/en-US/
+docs/Web/Accessibility/ARIA
+
+-> Different Selectors: -> type ✔ -> id ✔ -> class ✔ -> universal ✔ -> attribute ✔
+-> combinators (Multiple selectors together) -> pseudo (elements + class) -> grouping
+
+-> Created a simple password validation (Comparing if both passwords are same).
+-> Created a HTML app to show the sum of two numbers.
+
+-> Margin gives outer space and padding gives inner space.
+
+-> Media Query -> A feature of CSS with which you can give certain conditions which
+if satisfied by the browser, the given CSS will be applied.
+
+Assignment1: -> Make your porfolio / landing page responsive.
+
+Assignment2: (Not Mandatory) -> Make the form responsive.
+
+-> CSS. --> Selectors / Specificity --> CSS functions. --> calc --> repeat --> var
+
+--> Media Queries (Making page responsive) / Animation.
+
+Dec-26
+
+Vanilla -> Writing a program without any added library or framework.
+(Vanilla means without any flavour).
+
+Task -> Create an Ecommerce webpage. -> Ref wireframe.
+
+-> Transition Timing function: -> The change of speed how you want to animate the stuff!
+--> linear -> Constant speed always -> ease-in -> Start slow and end fast. -> ease-out
+->
+Start fast and end slow. -> ease-in-out -> Start slow, become fast in the middle and
+end slow.
+
+Media Query
+Selectors.
+Functions. --> calc --> repeat --> var
+Specificity
+Flex
+Animation.
+Assignment:
+
+Create a UI like Google Drive. -> Main requirement is to have a functionality to switch
+between display flex and display table. (This should happen on click of a button).
+Further Reading: -> https://owlcarousel2.github.io/OwlCarousel2/ -> https://splidejs.com/
+
+Jan-01.
+
+N:
+
+If we have only 1 statement of execution, we don't need to have the curly brackets.
+Latest version of ES is ES12. (Till date)
+dev.to, pullrequest.com, betterprogramming.pub
+Regular Functions will bind to the context of execution whereas arrow functions will
+not bind.
+Context of Execution.
+If in an object we are calling a regular function. It will bind to the context of
+execution, therefore it will point to the object. Whereas the arrow function will not
+bind to the context of execution and it will not point to the object. Instead it will
+point to window.
+If in the same object, we have async code (setTimeout), in that case, the async
+setTimeout function is executed in the window context because of which the regular
+function points to the winodow object. (This is not good), and the arrow function
+because it does not bind to the context of execution, it will not bind to window.
+Instead, it will bind to the scope of the caller. It will point to the object.
+-> Regular functions have the this keyword point to the context of execution. ->
+arrow functions have the this keyword point to the scope where they are written.
+
+Different Types of functions:
+Normal functions
+Anonymous functions.
+Arrow functions. -> A regular arrow function. -> Arrow functions with only 1 parameter.
+-> One Liner Arrow functions. (It will return that statement).
+-> Arrow functions with 0 parameters. (Both ways, with an empty round bracket as well
+as with \_).
+-> All arrow functions are anonymous functions by their nature.
+
+Pros:
+
+Improves code readability.
+Beacause of their anonymous nature, they are more secure.
+There is no need of a context.
+
+Cons:
+
+It doesn't bind with the this keyword as we expect.
+Not supported in all browsers (Internet Explorer). We will have to do something called
+a polyfill to make it work on IE.
+(this keyword)
+
+Function Instantiation. -> Creating a function using the new keyword.
+
+IIFE (Pronounced as effy ) -> Immediately Invoked Function Expression. ->
+Immediately Invoked -> Invoke the function immediately on the same line. ->
+Function Expression.
+-> A typical function. -> IFFE are good with anonymous functions only
+(Because of security points).
+
+Arguments and Parameters.
+
+Rest operator.
+
+Prototype.
+
+Q. What is a function? -> Collection of statements to perform a task. ->
+It is reusable set of commands/set of instructions. -> Needs to be called (invoked).
+-> Takes an input gives an output. -> Inputs are given as arguments. ->
+Outputs are given as return.
+
+Q. What is the difference between arguments and parameters? -> Parameters are written
+in function definitions. -> Arguments are sent in function invocation.
+
+Assignments:
+
+Use Rest operator and create your own minimum function. As in, it will take n number of
+arguments and return (NOT CONSOLE LOG) the minimum number out of that. DO NOT USE Math.
+xxxxx
+functions. (This includes a DSA question, finding minimum from an array).
+minofAll(1, 2, 3, 4, 5, 6); minofAll(-1, -5, 10); minofAll(10, 20);
+
+Create an array prototype to chek whether a prime number is present in that array or not.
+(return and not console directly).
+[1, 3, 5] => true [2, 4, 10, 15] => false
+
+If we get time: -> Closure. -> Generator Functions.
+
+Jan-02
+
+Pass by Value and Pass by Reference.
+Pass by Value (Call by Value) and Pass by Reference (Call by Reference).
+Pass by value will fetch the value from the memory and send the exact value.
+Pass by reference (is lazy), it will directly send the memory location only.
+Because of this, if we change inside the function, the main memory content will be
+changed!
+Pure Functions and Impure functions.
+It is not using any of the data (variable) from outside of it's inner scope.
+
+It should not have any side effects! (Leaking) -> My function should not edit ANY data
+outside of it's inner scope.
+
+If I run my function n number of times with same input. It should give me same output!
+
+The reason of having more pure functions is for better coding, more robustness, better
+compatability with other pure functions. (Because combining say 10,000 differen pure
+functions will not break anything in the code as each function will change only stuff
+inside it's inner scope.)
+
+First order function and higher order function.
+Higher order functions can take and/or return another function as it's argument/output.
+First order (First class) functions do not deal with functions as argument or return.
+This type of function will not take another function as an argument add will also not
+return a
+function as output.
+Callback -> Passing a function as an argument to a higher order function and then
+invoking it from inside of the higher order function.
+
+Recursion -> A function that calls itself (directly or indirectly) is called a
+recursive function.
+
+A direct recursive function will call itself from within directly.
+An indirect function will call another function which will call the initial function.
+-> Any algorithm that is done by loop (iteration) can be done using recursion and
+vice-versa.
+
+Lexical Scope -> The scope where all the required data is available.
+
+Closure -> Simply put, we can say it is function inside another function where if we
+return the inner function. It will prevent it's lexical scope from being garbage
+collected.
+It also makes the code more secure!
+
+Assignment (UI based!):
+
+Find factorial of a number using Recursion. (Create an input field, add a button and
+on clicking show the computed result in a paragraph or something).
+Create a lock screen with a 4 digit pin code. (10 separate buttons). Similar to your
+phone. (You can decide your own pin). Once unlocked, you can simply change text or
+something.
+(Reference, attached image).
+Create a FizzBuzz App.
+If any number is divisible by 3, you should say Fizz
+
+If any number is divisible by 5, you should say Buzz
+
+If any number is divisible by both 3 and 5. You should say FizzBuzz 1, 2, Fizz, 4, Buzz,
+Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz...
+
+The UI will be like you have an input type number and then button. Generate the first n
+numbers in the FizzBuzz series and display it in a list!
+
+Scope chaining.
+
+Spread Operator.
+
+Hoisting -> Temporal Dead Zone.
+
+Ternary comparison opertor.
+Further Reading - https://codepen.io/mendieta/pen/WgvENJ
+
+JS CConcepts (Prerequisite for getting into React)-
+Modules
+ES6
+Arrow functions
+Async JS (Event Loop, Task Queue, Await)
+NPM
+Const and Let.
+Inheritance and OOP concepts. (Kind of like prototype)
+-> Hosting is moving declaration at the top of execution scope. (Before the actual code
+execution).
+
+Spread Operator
+Ternary Operator
+Hoisting -> TDZ - Temporal Dead Zone
+Call Stack - It is a mechanism which will keep track of the function call. Which
+function is being executed and which is the caller function and who this function
+will call.
+
+Web API - API is an interface which allows communication between two pieces of software.
+Web API allows communication between JS Engine and the Browser - https://developer.
+mozilla.org/en-US/docs/Web/API
+Task Queue - It is a queue (FIFO) which contains the callbacks which has to be executed.
+Event Loop - This is the loop which runs inifinitely which will check the Callstack and
+if that is empty then pick the task from the Task Queue and push it in the Callstack.
+Assignment:
+
+Create a UI for a quiz Game similar to KBC. (MAke it look as close to the real one as
+
+possible.)
+Create a UI for Stopwatch and implement the lap functionality (Basically when I click
+on the lap button, it should create a list and add that time into the list).
+(Start, Pause and Reset functionalities.) Reference - https://www.timeanddate.com/
+stopwatch/
+Inspiration
+
+https://dribbble.com
+https://in.pinterest.com/
+
+Jan-09
+
+Go through the test question.
+
+Event Loop (Call Stack, Task Queue, Microtask Queue)
+
+Web API / Web Workers -> session, cookies / localstorage.
+
+Promises
+
+It is an object
+It is a proxy. (It doesn't contain the actual value until the promise is resolved/
+rejected. Upto that time, we treat it as a proxy object).
+It has two responses - (success, reject).
+It has 3 states - (pending, success, reject).
+.then -> It is used to success state.
+.catch -> It is used to failure state.
+fetch.
+Assignment 1.
+
+For the KBC Assignment. Prepare the question list and have it externally in JSON
+format and load it in the game via fetch.
+When the files are loaded, show the UI. Show 4 options and add eventListener.
+Based on that check whether the answer is correct or not. If correct.
+Increase the winning amount and change the question. Start the 30 second timer again.
+If incorrect answer, give the total money and say bye bye.
+If the 30 second timer is done. Then also say bye bye. 👋🏻
+Async Await
+Network Calls -> fetch (XHR)
+OOP and ES6 -> constructor and destructor.
+Scope Chaining
+Do you want extra sessions on the Weekdays?
+
+Mon
+
+Tue ✔ - Practice
+
+Wed
+
+Thu ✔ - Practice
+
+Fri
+
+Convert 1 practice session to concept session.
+
+May be add 1 more practice session. (1 cocept and 2 practice).
+
+From 7 to 11? -> Yes - 45% | No - 55%
+
+3rd Idea
+
+Sat | Sun -> concept (8 to 11)
+Mon ❌
+Tue -> Concept (8 to 10)
+Wed | Thu -> Practice (8 to 10)
+Friday ❌ -> Yes - 86% | No - 14%
+Assignments. For concepts -> 1 per session. Practice - 1 assignment per 2 sessions.
+Instead of many small assignments.
+Give less big assignments (End to end). Practice -> Create a project level app.
+(E2E instead of concepts).
+
+TA are not there.
+
+access key:=4cPAqXwaxFloyugDqWqXfmdJrJ8_lP9z3p5sJjGc5Is
+
+secret key:-s6cJ1ca9AQTTCPo-6B_O_O8cTXaS2jv7m58sgqiFW0c
+
+type script=
+
+diffrence between html attribute and dom property
+event bubling
+event capturing
+
+array.splice(index, numberofitemshas to delet);
+
+array.slice(fromindex, toindex)
+
+OOP Type Key Features Implementation Example
+
+Class and Object Classes as blueprints, objects as instances class Person {}
+Encapsulation Restrict access to data, private fields via # Private fields and getter methods
+Inheritance Reuse code by extending classes class Dog extends Animal {}
+Polymorphism Override methods in derived classes Overriding speak() in subclasses
+Abstraction Hide implementation details using base classes Abstract base classes and methods
+Inheritance Objects inherit directly from other objects Object.create()
+Composition Combine behaviors from multiple objects Object.assign()
+
+name
+from
+graduation
+present state
+project

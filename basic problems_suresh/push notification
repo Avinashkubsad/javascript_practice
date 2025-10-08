@@ -1,0 +1,50 @@
+User Requests Permission
+
+The app requests notification permission from the user.
+If granted, a device token (unique identifier) is assigned.
+Device Registers with FCM/APNS
+
+The app sends the device token to Firebase (FCM) (Android) or APNS (iOS).
+The backend stores this token for sending notifications later.
+Server Sends Notification to FCM/APNS
+
+Your backend (Node.js, Python, etc.) sends a notification request to FCM/APNS.
+The request includes:
+Device Token
+Notification Title & Body
+Custom Data (if needed)
+
+FCM/APNS Delivers Notification to Device
+
+If the app is foreground, the notification is handled inside the app.
+If the app is background/killed, the system displays the notification in the notification tray.
+
+installation
+npm install @react-native-firebase/app @react-native-firebase/messaging
+1, Add Firebase to Your Android App
+Go to Firebase Console → Create Project.
+Download google-services.json and place it in android/app/.
+2️⃣ Modify android/build.gradle
+3️⃣ Modify android/app/build.gradle
+
+1️⃣ Enable Push Notifications & Background Modes in IOS
+Go to Xcode → Signing & Capabilities.
+Enable:
+Push Notifications
+Background Modes → Select Remote Notifications.
+2️⃣ Add Firebase iOS SDK
+3️⃣ Add Firebase Plist
+Download GoogleService-Info.plist from Firebase and place it in ios/.
+4️⃣ Modify AppDelegate.m
+
+Step 4: Request Notification Permissions
+Step 5: Get Device Token
+Step 6: Handle Notifications
+1️⃣ Foreground Notifications and back ground, and handle click of notification
+
+Step 7: Sending Notifications from Server
+
+What is Backend?
+Backend refers to the server-side of an application that handles the logic, database interactions, 
+authentication, and other processes that users don’t directly see. It acts as the brain of an app, 
+processing requests from the frontend and sending back the necessary data.
