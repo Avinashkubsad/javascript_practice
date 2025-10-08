@@ -1,15 +1,40 @@
+// squarred numbers
 var num = [1,2,3,4];
-
 var squarredNumbers = []
-
 for(var i=0;i<num.length;i++){
     squarredNumbers.push(num[i] *num[i]);
-   // console.log(squarredNumbers);
+    console.log(squarredNumbers);
 }
 
 
 
+const colors ={
+    first : "blue",                        
+    second : "red",
+    third : "green"
+}
 
+
+for(let color in colors){
+    console.log(colors[color]);
+}
+
+for(let color in colors){
+    console.log(color+ "->" +colors[color]);
+}
+
+
+const fruits = ["apple","mango","banana","grapes"];
+
+for (let  fruit in fruits){
+    console.log(fruits[fruit]);
+}
+
+for (let  fruit in fruits){
+    console.log(fruit +"->"+fruits[fruit]);
+}
+
+//const arr = [1,2,3,4];
 
 // function fruit(){
 //     console.log(name);
@@ -20,3 +45,5 @@ for(var i=0;i<num.length;i++){
 // }
 
 // fruit();
+
+
