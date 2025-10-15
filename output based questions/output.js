@@ -7,7 +7,6 @@ for(var i=0;i<num.length;i++){
 }
 
 
-
 const colors ={
     first : "blue",                        
     second : "red",
@@ -27,11 +26,11 @@ for(let color in colors){
 const fruits = ["apple","mango","banana","grapes"];
 
 for (let  fruit in fruits){
-    console.log(fruits[fruit]);
+    //console.log(fruits[fruit]);
 }
 
 for (let  fruit in fruits){
-    console.log(fruit +"->"+fruits[fruit]);
+    //console.log(fruit +"->"+fruits[fruit]);
 }
 
 //const arr = [1,2,3,4];
