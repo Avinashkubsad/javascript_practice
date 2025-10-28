@@ -2,6 +2,7 @@ const arr = [1, 3 , 4, 6]
 
 // console.log(arr);
 // console.log(arr[0])
+ console.log(arr[0])
 
 
 const arr1 = new Array(1,2,3,4,5,9)
