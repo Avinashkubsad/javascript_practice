@@ -5,7 +5,7 @@ for(var i=0;i<num.length;i++){
     squarredNumbers.push(num[i] *num[i]);
     console.log(squarredNumbers);
 }
-
+console.log("using");
 
 const colors ={
     first : "blue",                        
