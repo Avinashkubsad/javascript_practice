@@ -25,6 +25,10 @@ for(let color in colors){
 
 const fruits = ["apple","mango","banana","grapes"];
 
+console.log("using for ..of")
+for (let  fruit of fruits){
+    console.log(fruits[fruit]);
+}
 for (let  fruit in fruits){
     //console.log(fruits[fruit]);
 }
