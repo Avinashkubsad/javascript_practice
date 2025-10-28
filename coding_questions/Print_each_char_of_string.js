@@ -3,7 +3,6 @@
 //var str = "AVINASH"
 var str = "Aditya"
 
-
 for (var char of str){
     console.log(char)
 }
