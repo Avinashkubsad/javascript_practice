@@ -1,3 +1,6 @@
+******  Basic & Strings   ******
+
 1.Reverse of a string
 2. check given string is a palindrome
 3. count vowels in string 
+4. finf the first non repeating character
