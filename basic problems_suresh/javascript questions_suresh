@@ -1,13 +1,13 @@
-Is JavaScript a case sensitive language?
+// 1. Is JavaScript a case sensitive language?
 yes
 	
-difference bw typescript and javascript?
-==>js is faster, type script is slower since first need to compile into JavaScript, then runs.
+// 2. difference bw typescript and javascript?
+//==>js is faster, type script is slower since first need to compile into JavaScript, then runs.
 
-Is JavaScript Strictly Typed or Loosely Typed Language?
+// 3. Is JavaScript Strictly Typed or Loosely Typed Language?
 loosly types, since dont need to specify variable types
 	
-Is JavaScript interpreted or compiled?
+//Is JavaScript interpreted or compiled?
 interpreted
 	
 What is the difference between Primitive and Non Primitive Data Type?
