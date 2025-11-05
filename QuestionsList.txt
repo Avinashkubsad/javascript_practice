@@ -4,3 +4,17 @@
 2. check given string is a palindrome
 3. count vowels in string 
 4. finf the first non repeating character
+
+
+
+****  Number ***
+-> Check if it is prime number or not
+-> find the factorial of a number
+-> find the nth fibonacci number
+-> finfd greatest  common Divisor
+
+
+******  Arrays **** 
+->  Find the maximum number in a Arrays
+-> Remove Duplicates from Arrays
+->
