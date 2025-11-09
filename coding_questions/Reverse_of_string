@@ -5,6 +5,20 @@ const arr1= [5,6,7];
 console.log(arr1.reverse());
 
 
+
+
+function reverseString(str) {
+  let reversed = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+
+console.log(reverseString("Avinash")); // Output: hsanivA
+
+
+//2. with using inbuilt function
 function reverseString(str) {
     return str.split('').reverse().join('');   // converts the string into array of char ,reverse the array, reverses the array back into string.
 }
