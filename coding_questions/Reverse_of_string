@@ -19,6 +19,18 @@ function reverseString(str) {
 console.log(reverseString("Avinash")); // Output: hsanivA
 
 
+//2,using Recursion
+//“I recursively call the function on the substring starting from the 2nd character, 
+// and add the first character at the end each time.”
+function reverseString(str) {
+  if (str === "") return "";
+  return reverseString(str.substr(1)) + str[0];
+}
+
+console.log(reverseString("Avinash")); // Output: hsanivA
+
+
+
 //2. with using inbuilt function
 function reverseString(str) {
     return str.split('').reverse().join('');   // converts the string into array of char ,reverse the array, reverses the array back into string.
@@ -27,6 +39,9 @@ function reverseString(str) {
 console.log(reverseString("avinash")); // "hsaniva"
 
 console.log(reverseString("hello"));
+
+
+
 
 
 
