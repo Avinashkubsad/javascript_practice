@@ -31,7 +31,8 @@ console.log(reverseString("Avinash")); // Output: hsanivA
 
 
 
-//2. with using inbuilt function
+//3. with using inbuilt function
+//“If built-ins are allowed, I can use split(), reverse(), and join() together to reverse the string in one line.”
 function reverseString(str) {
     return str.split('').reverse().join('');   // converts the string into array of char ,reverse the array, reverses the array back into string.
 }
