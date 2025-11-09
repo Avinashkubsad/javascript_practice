@@ -1,12 +1,13 @@
 //write a program to reverse of a string 
-//1.  using a inbuilt function 
+
 const arr1= [5,6,7];
 
 console.log(arr1.reverse());
 
 
 
-
+//1. Uisng for loop
+//“I start from the last character and append each to a new string, forming the reversed result.”
 function reverseString(str) {
   let reversed = "";
   for (let i = str.length - 1; i >= 0; i--) {
