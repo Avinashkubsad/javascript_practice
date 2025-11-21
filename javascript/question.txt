@@ -1,7 +1,7 @@
 1. What is javascript?
 2. what is stack and heap in js?
 3. what is shallow copy and deep copy
-4.  
+4. what is Lazy loading?  
 
 
 
