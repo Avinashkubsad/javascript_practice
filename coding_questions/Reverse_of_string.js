@@ -39,10 +39,11 @@ function reverseString(str) {
 console.log(reverseString("avinash")); // "hsaniva"
 
 
-
-
-function reverseString(string){
-  return string.split("").reverse().join('');
+//4. Using ES6 Spread Operator
+//“I can use the spread operator to convert the string into an array of characters, 
+// then reverse and join them back together.”
+function reverseString(str) {
+    return [...str].reverse().join('');
 }
 
-
+console.log(reverseString("avinash")); // "hsaniva"
