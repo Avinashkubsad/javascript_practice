@@ -5,7 +5,7 @@ console.log(arr1.reverse());
 
 
 
-//1. Uisng for loop
+//1. Using for loop
 //“I start from the last character and append each to a new string, forming the reversed result.”
 function reverseString(str) {
   let reversed = "";
@@ -34,7 +34,7 @@ console.log(reverseString("Avinash")); // Output: hsanivA
 //“If built-ins are allowed, I can use split(), reverse(), and join() together to reverse the string in one line.”
 function reverseString(str) {
     return str.split('').reverse().join('');   // converts the string into array of char ,reverse the array, reverses the array back into string.
-}
+}                                              // ('') inside the bracket is every important bcoz  
 
 console.log(reverseString("avinash")); // "hsaniva"
 

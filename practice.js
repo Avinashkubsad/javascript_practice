@@ -1,0 +1,15 @@
+// the below is using function 
+function ReverseString(str){
+    return str.split('').reverse('').join('');
+}
+
+console.log(ReverseString("Avinash"))
+
+
+// the below is usng spread operator 
+function RevereseString (str){
+    return [...str].reverse().join();
+}
+
+console.log(RevereseString("Avinash")
+)
