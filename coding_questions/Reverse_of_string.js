@@ -38,10 +38,11 @@ function reverseString(str) {
 
 console.log(reverseString("avinash")); // "hsaniva"
 
-console.log(reverseString("hello"));
 
 
 
-
+function reverseString(string){
+  return string.split("").reverse().join('');
+}
 
 
