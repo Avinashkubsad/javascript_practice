@@ -7,12 +7,12 @@
 
 
 // the below is usng spread operator 
-// function RevereseString (str){
-//     return [...str].reverse().join();
-// }
+function RevereseString (str) {
+    return [...str].reverse().join();
+}
 
-// console.log(RevereseString("Avinash")
-// )
+console.log(RevereseString("Avinash")
+)
 
 
 // function reverseString(str){
@@ -24,13 +24,13 @@
 
 
 
-function reverseString(str){
-    let reversed ="";
-    for(let i=str.length -1; i>=0; i--) {
-         reversed +=str[i];
-    }
+// function reverseString(str){
+//     let reversed ="";
+//     for(let i=str.length -1; i>=0; i--) {
+//          reversed +=str[i];
+//     }
 
-    return reversed;
-}
+//     return reversed;
+// }
 
-console.log(reverseString("pradeep"));
+// console.log(reverseString("pradeep"));
