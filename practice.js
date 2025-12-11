@@ -34,3 +34,11 @@ console.log(RevereseString("Avinash")
 // }
 
 // console.log(reverseString("pradeep"));
+
+
+
+function isPalindrome(str){
+    return str = str.split('').reverse("").join("");
+}
+
+console.log(isPalindrome("madam"));
