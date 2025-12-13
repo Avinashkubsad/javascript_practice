@@ -29,7 +29,7 @@ function isPalindrome(str) {
   }
 
   return true;
-}
+} 
 console.log(isPalindrome("madam"));
 
 
