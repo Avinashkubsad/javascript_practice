@@ -10,3 +10,7 @@ console.log(myDate.toLocaleDateString());   //gives o/p as month/date/year only 
 console.log(myDate.toLocaleTimeString());   // 6:23:29 PM
 
 
+// template literals in js
+let name = "Avinash";
+let greeting = `Hello, ${name}! Welcome to the JavaScript world.`;
+console.log(greeting);
