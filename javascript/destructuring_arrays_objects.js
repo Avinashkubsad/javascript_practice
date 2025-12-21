@@ -15,3 +15,15 @@ console.log(c); // 30
 
 
 
+let person ={
+    name:"Avinash",
+    age:25,
+    city:"New York"
+}
+
+let {name : j,age:h,city:i} = person;
+
+console.log(person);
+console.log(person.age);
+console.log(person.city);
+
