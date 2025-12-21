@@ -10,3 +10,8 @@ let [a, b, c] = arr;
 console.log(a); // 10
 console.log(b); // 20
 console.log(c); // 30   
+
+
+
+
+
