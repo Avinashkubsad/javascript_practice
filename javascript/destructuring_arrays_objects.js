@@ -18,12 +18,16 @@ console.log(c); // 30
 let person ={
     name:"Avinash",
     age:25,
-    city:"New York"
+    city:"New York",
+    address:{
+        street:"123 Main St",
+        zip:"10001"
+    }
 }
 
-let {name : j,age:h,city:i} = person;
+let {name : j,age:h,city:i,address:{street}} = person;
 
 console.log(person);
 console.log(person.age);
 console.log(person.city);
-
+console.log(street);
