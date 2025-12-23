@@ -2,3 +2,10 @@
 
 it is a programming paradigm designed to handle functios in a better way in js(mainly pure functions)
 
+** key features of Functional programming 
+1. Imperative & declarative  way of writing code .
+2. pure functions and what are its side effects.
+3. High order functions(map,reduce,filter etc)
+4. composition
+5. closure
+6. currying.
