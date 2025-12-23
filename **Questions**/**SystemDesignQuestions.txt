@@ -1,0 +1,13 @@
+𝗕𝗮𝗰𝗸𝗲𝗻𝗱 (𝗡𝗼𝗱𝗲.𝗷𝘀)
+1. How would you design an API that handles 10k+ concurrent users?
+2. How do you implement authentication + refresh tokens securely?
+3. How would you design rate limiting for public APIs?
+4. How do you handle background jobs (emails, notifications, retries)?
+5. How would you design error handling & logging for production?
+
+𝗘𝗻𝗱-𝘁𝗼-𝗘𝗻𝗱 𝗧𝗵𝗶𝗻𝗸𝗶𝗻𝗴
+1. How would you design file uploads (large files, retries, progress)?
+2. How do you handle real-time updates (chat, live status)?
+3. How would you cache data across mobile + backend?
+4. How do you roll out breaking API changes without app crashes?
+5. How do you monitor and debug performance issues in production?
