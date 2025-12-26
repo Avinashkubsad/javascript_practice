@@ -4,6 +4,7 @@
 3. How would you design rate limiting for public APIs?
 4. How do you handle background jobs (emails, notifications, retries)?
 5. How would you design error handling & logging for production?
+6. how do you design visitors schema? 
 
 𝗘𝗻𝗱-𝘁𝗼-𝗘𝗻𝗱 𝗧𝗵𝗶𝗻𝗸𝗶𝗻𝗴
 1. How would you design file uploads (large files, retries, progress)?
