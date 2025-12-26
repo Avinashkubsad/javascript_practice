@@ -14,3 +14,10 @@ addImpure(2); // Always returns 5, but depends on external state
 
 
 addImpure(2); // Always returns 6, but depends on external state
+
+//pure function
+function addPure(x, y) {
+    return x + y; // This function is pure because it only depends on its input parameters
+}
+
+console.log(addPure(2, 3));   //its pure function because it will always return 5 for the same inputs 2 and 3
