@@ -12,7 +12,7 @@ console.log(arr1[3])
 
 arr1.push(5);  // push method add the element at the end of the array 
 arr1.push(6);  
-arr1.push(7);  
+arr1.push(7);   
 
 
 
