@@ -7,12 +7,12 @@
 
 
 // the below is usng spread operator 
-function RevereseString (str) {
-    return [...str].reverse().join();
-}
+// function RevereseString (str) {
+//     return [...str].reverse().join();
+// }
 
-console.log(RevereseString("Avinash")
-)
+// console.log(RevereseString("Avinash")
+// )
 
 
 // function reverseString(str){
@@ -37,23 +37,32 @@ console.log(RevereseString("Avinash")
 
 
 
-function isPalindrome(str){
-    return str = str.split('').reverse("").join("");
-}
+// function isPalindrome(str){
+//     return str = str.split('').reverse("").join("");
+// }
 
-console.log(isPalindrome("madam"));
+// console.log(isPalindrome("madam"));
 
 
 
-function isPalindrome(str){
-    let i = 0; j=str.length-1;
+// function isPalindrome(str){
+//     let i = 0; j=str.length-1;
 
-    while(i<j){
-        if(str[i] !==str[j]){
-            return false;
-        }
-        i++;
-        j--;
-    }
-    return true;
-}
+//     while(i<j){
+//         if(str[i] !==str[j]){
+//             return false;
+//         }
+//         i++;
+//         j--;
+//     }
+//     return true;
+// }
+
+
+
+
+const arr = [1,2,[1,2,3,4],3,4,[1,2,3,4],4,5];
+
+const result = arr.flat(Infinity);
+
+console.log(result);
